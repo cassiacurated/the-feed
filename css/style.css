@@ -1,0 +1,59 @@
+body {
+    background-color: #c2cbfc;
+    background-image: url("../img/background-nature.jpg");
+    background-size: auto;
+    background-position: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: auto 25% auto 25%;
+}
+
+.logo {
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  animation: wiggle 0.4s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25%      { transform: rotate(-8deg); }
+  75%      { transform: rotate(8deg); }
+}
+
+figure {
+  background-color: #ffffff;
+  border: 2px solid #4d1a1a;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 0 auto 40px auto;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+figure img,
+figure video {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  margin-top: 10px;
+  padding: 4px 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+h1 {
+  color: #3c1919;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
